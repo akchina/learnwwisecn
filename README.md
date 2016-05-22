@@ -6,7 +6,7 @@
 
 本仓库中的文档一般采用 Markdown 格式，可在 Web 浏览器中在线阅读，也可用浏览器另存为 PDF 文档。可以通过 GitHub 的版本控制报告追踪现有文档的内容变化。
 
-有关学习资料内容的疑问，请到 [Issues](https://github.com/akchina/learnwwisecn/issues) 区提问讨论。
+有关学习资料内容的讨论，请到 [Issues](https://github.com/akchina/learnwwisecn/issues) 区发起话题。
 
 欢迎用户反馈，欢迎 fork 本仓库内容并以 Pull Request 形式提出内容改进或修正，也欢迎贡献第三方技巧贴士和教程。
 
