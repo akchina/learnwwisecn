@@ -13,7 +13,6 @@
 * [空间定位](#sec-pos)
 * [互动控制](#sec-interact)
 * [异步处理](#sec-async)
-* [游戏引擎编辑器集成](#sec-gameeditor)
 * [调试](#sec-debug)
 * [进阶学习](#sec-gofurther)
 * [技术支持沟通](#sec-support)
