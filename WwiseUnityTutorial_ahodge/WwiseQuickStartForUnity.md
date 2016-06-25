@@ -24,7 +24,7 @@
 - 事件（Event）
 - 游戏同步器（Game Sync）如 RTPC 和 State
 - 互动音乐
-- 用音频总线（Auido Bus）混音
+- 用音频总线（Audio Bus）混音
 
 [下载本文配套音频素材（6.7 MB）](http://anor.ac/downloads/Audio%20assets.zip)  
 [下载镜像](https://yunpan.cn/cR4w2xYwxvFXa)（提取码：f638）
