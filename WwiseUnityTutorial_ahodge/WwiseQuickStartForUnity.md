@@ -14,6 +14,8 @@
 
 <embed src="http://static.video.qq.com/TPout.swf?vid=c0309n8qvtk&auto=0" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 
+[视频链接](http://v.qq.com/page/c/t/k/c0309n8qvtk.html)
+
 ## 综述
 
 本文将涉及 Wwise 的以下功能点，权当 Wwise 潜能的一碟开胃菜：
