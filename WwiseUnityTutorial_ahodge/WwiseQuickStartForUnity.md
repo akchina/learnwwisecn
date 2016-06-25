@@ -22,7 +22,8 @@
 
 - Wwise 编辑器的视图和术语
 - 事件（Event）
-- 游戏同步器（Game Sync）如 RTPC 和 State
+- 游戏同步器（Game Sync）如 State
+- 共享集（ShareSet）
 - 互动音乐
 - 用音频总线（Audio Bus）混音
 
