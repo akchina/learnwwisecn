@@ -6,7 +6,7 @@
 **原文链接：**http://anor.ac/?page_id=93  
 **版权说明：**本文所有内容由原作者授权 Audiokinetic 翻译、转载并转存部分文件供镜像下载
 
-蒙特利尔的公司 Audiokinetic 开发了流行的游戏音频中间件 Wwise。我特别写下本文来帮助 Unity 开发者将 Wwise 整合到游戏项目中，文中提供详细步骤和示例素材。
+蒙特利尔的公司 [Audiokinetic](https://www.audiokinetic.com/) 开发了流行的游戏音频中间件 Wwise。我特别写下本文来帮助 Unity 开发者将 Wwise 整合到游戏项目中，文中提供详细步骤和示例素材。
 
 ## 预览
 
