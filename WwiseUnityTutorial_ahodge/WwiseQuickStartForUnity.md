@@ -133,7 +133,7 @@ AkSoundEngine.PostEvent("PlayerShoot", this.gameObject);
 
 ![](images/Screen-Shot-2015-09-04-at-1.00.59-PM.png)
 
-选中`damage sounds`对象，让我们关注一下它的`Property Editor`。我们可以再次用 Wwise Randomizer 为整个容器添加一些随机音高变化。这一次，让我们将音高多样化设成严格为正值 － 我们要设这个值为300音分，这样嘟哝声会有种活泼的花栗鼠叫声的质感。我们还要保证`Play Type`设为`Random	``Shuffle`，并且因为我们不想连续听到同样的嘟哝声，所以我们可以告诉 Wwise 要`Avoid repeating the last``2``played`（避免重复前面2次播放的内容）.我们还要仔细确保`Play Mode`属性设置为`Step`（步进）而不是`Continuous`（连续）。
+选中`damage sounds`对象，让我们关注一下它的`Property Editor`。我们可以再次用 Wwise Randomizer 为整个容器添加一些随机音高变化。这一次，让我们将音高多样化设成严格为正值 － 我们要设这个值为300音分，这样嘟哝声会有种活泼的花栗鼠叫声的质感。我们还要保证`Play Type`设为`Random	``Shuffle`，并且因为我们不想连续听到同样的嘟哝声，所以我们可以告诉 Wwise 要`Avoid repeating the last``2``played`（避免重复前面2次播放的内容）。我们还要仔细确保`Play Mode`属性设置为`Step`（步进）而不是`Continuous`（连续）。
 
 ![](images/Screen-Shot-2015-09-04-at-12.37.55-PM.png)
 
@@ -143,7 +143,7 @@ AkSoundEngine.PostEvent("PlayerShoot", this.gameObject);
 
 ### 创建敌人音效
 
-下面，我们要给三种敌人类型配上各自的声音。再次选中`Actor-Mixer Hiearchy`中的`Default Work Unit`，导入（`Shift+I`）`bunny.wav`、`bear.wav`、`hellephant.wav`这几个音频文件。这些会作为三种敌人类型的主要声音。
+下面，我们要给三种敌人类型配上各自的声音。再次选中`Actor-Mixer Hierarchy`中的`Default Work Unit`，导入（`Shift+I`）`bunny.wav`、`bear.wav`、`hellephant.wav`这几个音频文件。这些会作为三种敌人类型的主要声音。
 
 如果试听一下这三个新 SFX 对象，你会注意到它们其实都是一种怪物嚎叫的变体，并且各自反映了敌人的个头 － 兔子（bunny）声基本上是微喘了一口气，而地狱象（hellephant）的声音更长，更深沉响亮，而且感觉像是大得多的动物。熊（bear）的声音介于上面两者之间。
 
