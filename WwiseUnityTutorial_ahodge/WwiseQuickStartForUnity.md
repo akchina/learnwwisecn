@@ -181,7 +181,7 @@ AkSoundEngine.PostEvent("PlayerShoot", this.gameObject);
 
 我们也需要把先前创建的`PlayerDamage`事件加入。打开`PlayerHealth.cs`，在`TakeDamage()`中添加以下代码
 
-```cpp
+```csharp
 AkSoundEngien.PostEvent("PlayerDamage", this.gemaeObject);
 ```
 
