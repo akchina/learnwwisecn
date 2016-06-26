@@ -242,9 +242,10 @@ AkSoundEngien.PostEvent("PlayerDamage", this.gemaeObject);
 ```csharp
 if(h != 0 || v !=0)
 {
-	AkSoundEngine.SetState("MainStateGroup", "Movement");	
+	AkSoundEngine.SetState("MainStateGroup", "Movement");
 } 
-else {
+else 
+{
 	AkSoundEngine.SetState("MainStateGroup", "Idle");
 }
 ```
