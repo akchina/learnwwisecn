@@ -199,11 +199,11 @@ AkSoundEngien.PostEvent("PlayerDamage", this.gemaeObject);
 
 ![](images/Screen-Shot-2015-09-01-at-5.13.11-PM1.png)
 
-切换到`Project Explorer`的`Audio`选项卡，并右击`Interactive Music Hierarchy`（互动音乐层级结构）文件夹中的`Default Work Unit`。新建一个 Music Switch Container，并给它取名为`SwitchContainer`。然后右击`SwitchContainer`并新建两个 Music Playlst 类型的子对象，给它们取名为`Muisc Playlist Idle`和`Muisc Playlist Movement`。
+切换到`Project Explorer`的`Audio`选项卡，并右击`Interactive Music Hierarchy`（互动音乐层级结构）文件夹中的`Default Work Unit`。新建一个 Music Switch Container，并给它取名为`SwitchContainer`。然后右击`SwitchContainer`并新建两个 Music Playlst 类型的子对象，给它们取名为`Music Playlist Idle`和`Music Playlist Movement`。
 
 ![](images/Screen-Shot-2015-09-01-at-5.23.44-PM.png)
 
-我们现在要把创建好的 States 和`SwitchContainer`对象关联起来。点击`SwitchContainer`对象并在`Muisc Switch Container Property Editor`中选中`States`选项卡。点击标记为`Add >>`的按钮然后添加我们创建好的`MainStateGroup`。
+我们现在要把创建好的 States 和`SwitchContainer`对象关联起来。点击`SwitchContainer`对象并在`Music Switch Container Property Editor`中选中`States`选项卡。点击标记为`Add >>`的按钮然后添加我们创建好的`MainStateGroup`。
 
 ![](images/Screen-Shot-2015-09-01-at-5.25.45-PM-1024x442.png)
 
@@ -211,11 +211,11 @@ AkSoundEngien.PostEvent("PlayerDamage", this.gemaeObject);
 
 ![](images/Screen-Shot-2015-09-01-at-5.31.59-PM.png)
 
-我们也可以给`Destination`区添加`Fade-in`，采用与上述类似的数值。我们还要把`Destination`设定为`Sync to`**`Same time as Playing Segment`**。下面，我们要把`MainStateGroup`添加到`Muisc Switch Container Association Editor`（关联编辑器）中去，方法是点击标记为`>>`的按钮。最后，我们需要将两个 Music Playlist 子对象从`Interactive Music Hierarchy`中拖到`Muisc Switch Container Association Editor`中它们对应的 States 上面去。***这是至关重要的一步，而且我发现很容易忘记这一步。***
+我们也可以给`Destination`区添加`Fade-in`，采用与上述类似的数值。我们还要把`Destination`设定为`Sync to`**`Same time as Playing Segment`**。下面，我们要把`MainStateGroup`添加到`Music Switch Container Association Editor`（关联编辑器）中去，方法是点击标记为`>>`的按钮。最后，我们需要将两个 Music Playlist 子对象从`Interactive Music Hierarchy`中拖到`Music Switch Container Association Editor`中它们对应的 States 上面去。***这是至关重要的一步，而且我发现很容易忘记这一步。***
 
 ![](images/Screen-Shot-2015-09-01-at-5.43.37-PM-1024x191.png)
 
-现在，切换到`Music Swtich Container Property Editor`的`General Settings`选项卡，将`Time Settings`中的`Tempo`更新为124。`SwitchContainer`的`Muisc Playlist`子对象会自动更新它们的`Tempo`属性来反映出父对象的变化。
+现在，切换到`Music Swtich Container Property Editor`的`General Settings`选项卡，将`Time Settings`中的`Tempo`更新为124。`SwitchContainer`的`Music Playlist`子对象会自动更新它们的`Tempo`属性来反映出父对象的变化。
 
 现在我们可以把音乐文件添加到 Wwise 工程中去了。最简单的方法是把正确的文件拖放到 Music Playlist 对象上去，这样会自动新建 Music Segment（音乐段落），它里面装有代表音乐文件的 Music Track（音乐轨）。然而，你还是可以手动添加这些子对象的，方法是右击`SwitchContainer`并新建 Music Segment 子对象然后再创建 Music Segment 的 Music Track 子对象。
 
