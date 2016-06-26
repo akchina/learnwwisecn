@@ -235,6 +235,12 @@ AkSoundEngien.PostEvent("PlayerDamage", this.gemaeObject);
 
 ![](images/Screen-Shot-2015-09-01-at-6.01.31-PM.png)
 
+***译注：原文的`StartGame`事件有几个问题需要澄清***
+
+* 这个事件需要单独在 Wwise 中创建，原文遗漏了这个说明；
+* 为了在游戏场景启动时发送该事件，应该在 Unity 工程中某个`MonoBehaviour`对象的`Start()`方法中调用`PostEvent()`方法，或者利用 Wwise Unity 集成自带的 AkAmbient 脚本组件，将其封装的事件属性`Trigger On`设为`Start`；
+* 建议在手动创建`StartGame`事件时不要包括上图中的前面三个 Actions，而只保留音乐播放的 Action，原因是这三个 Actions 对应的三个 SFX 对象已在`创建敌人音效`一节中被设为无限循环播放，所以一旦播放`StartGame`事件，怪物嚎叫声会伴随音乐不断播放，而且前文`ShareSets 介绍 － 衰减`一节中已提到为三种敌人分别创建了各自的事件来播放此处用到的三个 SFX 对象，所以上图中的情况不像是正常的设计。
+
 你需要将`Interactive Music Hierarchy`文件夹添加到 SoundBank 中去。重新生成 SoundBank 并切回 Unity。
 
 我们需要添加一点代码，代码要检查玩家是否移动了。一个简单的办法是把下列代码加到`PlayerMovement.cs`的`Move()`方法中去：
