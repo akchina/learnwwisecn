@@ -235,7 +235,7 @@ AkSoundEngien.PostEvent("PlayerDamage", this.gemaeObject);
 
 ![](images/Screen-Shot-2015-09-01-at-6.01.31-PM.png)
 
-***译注：原文的`StartGame`事件有几个问题需要澄清***
+***译注：原文和上图中的`StartGame`事件里有几个问题需要澄清***
 
 * 这个事件需要单独在 Wwise 中创建，原文遗漏了这个说明；
 * 为了在游戏场景启动时发送该事件，应该在 Unity 工程中某个`MonoBehaviour`对象的`Start()`方法中调用`PostEvent()`方法，或者利用 Wwise Unity 集成自带的 AkAmbient 脚本组件，将其封装的事件属性`Trigger On`设为`Start`；
