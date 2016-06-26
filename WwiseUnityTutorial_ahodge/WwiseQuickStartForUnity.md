@@ -68,7 +68,7 @@
 
 ## 生成 SoundBanks
 
-SoundBanks 是来装载 Wwise 中你要创建的所有内容的容器，包括 SFX 对象，Events 等等。游戏要加载的不是别人正是 SoundBank，所以每当 Wwise 工程有了变化和更新的时候，你都必须要重新生成一个新版本的 SoundBank。同一个游戏可以有多个 SoundBanks（通常每个游戏关卡会有自己的 SoundBank），但因为`Survival Shooter`只有一个场景，所以我们只会用到一个 SoundBank。
+SoundBanks 是来装载 Wwise 中你要创建的所有内容的容器，包括 SFX 对象，Events 等等。游戏要加载的不是别的正是 SoundBank，所以每当 Wwise 工程有了变化和更新的时候，你都必须要重新生成一个新版本的 SoundBank。同一个游戏可以有多个 SoundBanks（通常每个游戏关卡会有自己的 SoundBank），但因为`Survival Shooter`只有一个场景，所以我们只会用到一个 SoundBank。
 
 在`Project Explorer`中切换到`SoundBanks`选项卡。右击`SoundBanks`文件夹中的`Default Work Unit`之后选择`New Child`>`SoundBank`，接着给它取名叫`MainSoundBank`。
 
