@@ -108,7 +108,7 @@ SoundBanks 是来装载 Wwise 中你要创建的所有内容的容器，包括 S
 
 将下列代码添加到`Shoot()`下方：
 
-```cpp
+```csharp
 AkSoundEngine.PostEvent("PlayerShoot", this.gameObject);
 ```
 
@@ -182,7 +182,7 @@ AkSoundEngine.PostEvent("PlayerShoot", this.gameObject);
 我们也需要把先前创建的`PlayerDamage`事件加入。打开`PlayerHealth.cs`，在`TakeDamage()`中添加以下代码
 
 ```csharp
-AkSoundEngien.PostEvent("PlayerDamage", this.gemaeObject);
+AkSoundEngine.PostEvent("PlayerDamage", this.gemaeObject);
 ```
 
 保存并播放场景。你现在应该能够听到三个敌人的声音会随着敌人接近玩家而变得更响（`Ak Listener`组件附着在玩家上，这个对象是 Wwse 内部用来计算发送事件的 Game Object 和玩家之间距离的），而且玩家角色每次受创时会发出不同的嘟哝声！
@@ -219,11 +219,11 @@ AkSoundEngien.PostEvent("PlayerDamage", this.gemaeObject);
 
 现在我们可以把音乐文件添加到 Wwise 工程中去了。最简单的方法是把正确的文件拖放到 Music Playlist 对象上去，这样会自动新建 Music Segment（音乐段落），它里面装有代表音乐文件的 Music Track（音乐轨）。然而，你还是可以手动添加这些子对象的，方法是右击`SwitchContainer`并新建 Music Segment 子对象然后再创建 Music Segment 的 Music Track 子对象。
 
-将`StringPhraseIdle.wav`拖放到`Msic Playlist Idle`，然后将`StringPhraseMovement.wav`拖放到`Msic Playlist Movement`。
+将`StringPhraseIdle.wav`拖放到`Music Playlist Idle`上去，然后将`StringPhraseMovement.wav`拖放到`Music Playlist Movement`上去。
 
 ![](images/Screen-Shot-2015-09-01-at-5.56.20-PM.png)
 
-创建了 Music Segment 子对象之后，你还需要把它们添加到 `Music Playlist Editor`中去。选中`Msic Playlist Idle`对象，将`StringPhraseIdle`Music Segment 拖放到`Msic Playlist Editor`中去。将这个`Group`的`Loop Count`（循环次数）设为`Infinite`（无限），方法是单击下箭头。要对`Movement`Music Playlist 也重复一次这个过程。
+创建了 Music Segment 子对象之后，你还需要把它们添加到 `Music Playlist Editor`中去。选中`Music Playlist Idle`对象，将`StringPhraseIdle`Music Segment 拖放到`Music Playlist Editor`中去。将这个`Group`的`Loop Count`（循环次数）设为`Infinite`（无限），方法是单击下箭头。要对`Movement`Music Playlist 也重复一次这个过程。
 
 ![](images/Screen-Shot-2015-09-01-at-5.56.07-PM-1024x94.png)
 
