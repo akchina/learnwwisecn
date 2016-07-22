@@ -276,6 +276,13 @@ AK::Comm::Init();
 ```
 项目的 Release 版本中需要定义`AK_OPTIMIZED`这个条件编译宏，以确保最终发布版本不包含性能分析的支持。
 
+注意，如果要使用插件，还需要包含一个专用的头文件：
+
+```cpp
+#include <AK/Plugin/AllPluginsFactories.h>
+```
+但不需要再写插件注册代码。
+
 至此声音引擎就初始化完毕了。
 
 <h3 id='sec-render'></h3>
