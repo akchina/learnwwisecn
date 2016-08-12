@@ -16,4 +16,4 @@
 
 * [Wwise 快速上手指南：程序员篇](https://github.com/akchina/learnwwisecn/blob/master/WwiseQuickStart_Programmers.md)
 * [整合 Unity 和 Wwise](https://github.com/akchina/learnwwisecn/blob/master/WwiseUnityTutorial_ahodge/WwiseQuickStartForUnity.md)
-
+* [Wwise 基础知识]（https://github.com/akchina/learnwwisecn/tree/master/WwiseFundamentals）
