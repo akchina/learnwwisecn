@@ -6,6 +6,8 @@ Wwise自带的[性能分析、故障排除和调试工具](https://www.audiokine
 
 ## The Profiler Layout（性能分析器布局）
 
+![](https://github.com/akchina/learnwwisecn/blob/master/ProfilingTroubleshootingandDebuggingUsingWwise/images/Picture1-1.png?raw=true)
+
 最显而易见的性能分析工具自然是Profiler Layout。它由三个视图构成：Capture Log（捕获日志），Perfomance Monitor（性能监视器）和Advanced Profiler（高级性能分析器）。它的功能是监视并记录性能、内存使用和所有来自声音引擎的活动。
 
 通过使用Soundcaster Session（声音选角器会话），可以在进行游戏内的声音整合之前就在本地分析性能。这让声音设计师无需依赖游戏的可运行版本就能对音频系统进行性能分析和调试；这一功能在另一方面也非常有用，就是向开发者展示音频能够保持在既定的内存预算范围内，在整合后不会打断游戏。当音频加入后，您也可以一边玩游戏一边进行实时性能分析。这一点十分的好用，您可以确认游戏引擎能否正确发出音频事件，而无需在Soundcaster（声音选角器）内手动触发事件。
@@ -30,6 +32,8 @@ Performance Monitor视图能够展示CPU、流播放和内存使用方面的性�
 
 ## Game Object Profiler Layouts
 
+![](https://github.com/akchina/learnwwisecn/blob/master/ProfilingTroubleshootingandDebuggingUsingWwise/images/Picture2-1.png?raw=true)
+
 Game Object Profiler Layouts使用起来没有那么直观，但是在分析游戏中的Game Objects和Listeners（听者）的实时信息时，它还是非常有用。它由三个视图构成：Game Object Explorer（游戏对象管理器），Game Sync Monitor（游戏同步器监视器）,以及Game Object 3D Viewer（游戏对象3D查看器）。这一布局要在音频已整合到游戏中后使用，使用时需运行游戏并实时连接到游戏中。
 
 就像Profiler Layout一样，它也会分析声音引擎的输出，但它不是从声音引擎本身及其活动的角度，而是通过每个独立的游戏对象进行分析。使用Game Object Profiler Layout（游戏对象性能分析器），您可以分析任何在游戏中发声的对象并且确保它们的表现和设想的一致。
@@ -47,6 +51,9 @@ Game Object Explorer视图列出了所有由程序员注册的发声Game Objects
 
 ## Schematic View
 
+![](https://github.com/akchina/learnwwisecn/blob/master/ProfilingTroubleshootingandDebuggingUsingWwise/images/Picture3-1.png?raw=true)
+
+
 Schematic View主要的目的不是调试，但是用来查看工程中复杂的对象层级结构是非常方便的，它也可以用来确保合适的路径能够根据正确的条件和设置触发。
 
 它的主打特性是非常直接的工作流程。把任何组件从Project Explorer（工程管理器）中拖拽到Schematic View，它的图像就会显示出来，再点击“+”图标就会展开下一层。
@@ -63,6 +70,9 @@ Schematic View主要的目的不是调试，但是用来查看工程中复杂的
 如果不提到Soundcaster Session肯定也是不对的，因为它本身就是一个测试和调试工具，您几乎可以在这里复现游戏的全部或者一部分，聚焦音频内容。Shift+S的快捷键（显示Soundcaster）绝对是您应该最早记住的快捷键之一，因为这个工具让您能听到各种音频组件的互相作用，并确保您的States、Switches、RTPC和音乐触发器是关联到了正确Events的。
 
 调试愉快：）
+
+![](https://github.com/akchina/learnwwisecn/blob/master/ProfilingTroubleshootingandDebuggingUsingWwise/images/Anne-Sophie_Mongeau_Photo.jpg?raw=true)
+
 
 ### ANNE-SOPHIE MONGEAU
 
