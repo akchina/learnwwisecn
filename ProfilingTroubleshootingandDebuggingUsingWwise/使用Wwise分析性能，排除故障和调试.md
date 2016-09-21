@@ -2,7 +2,7 @@
 
 Wwise自带的[性能分析、故障排除和调试工具](https://www.audiokinetic.com/library/2016.1.0_5775/?source=Help&id=profiling)是Wwise的诸多强大优势之一；它们帮助Wwise这一软件成为最为完整强大的游戏音频中间件之一。了解如何充分利用这些功能是体会它们益处的关键。
 
-本文会提供一些见解，告知如何高效的使用Profiler（性能分析器）和Game Object Profiler Layouts（游戏对象性能分析器布局）、Schematic View（对象网络视图），以及其他可以在对游戏音频系统进行故障排除和调试时可以利用的小工具。
+本文会提供一些见解，介绍如何高效的使用Profiler（性能分析器）和Game Object Profiler Layouts（游戏对象性能分析器布局）、Schematic View（对象网络视图），以及其他可以在对游戏音频系统进行故障排除和调试时可以利用的小工具。
 
 ## The Profiler Layout（性能分析器布局）
 
@@ -10,9 +10,9 @@ Wwise自带的[性能分析、故障排除和调试工具](https://www.audiokine
 
 最显而易见的性能分析工具自然是Profiler Layout。它由三个视图构成：Capture Log（捕获日志），Perfomance Monitor（性能监视器）和Advanced Profiler（高级性能分析器）。它的功能是监视并记录性能、内存使用和所有来自声音引擎的活动。
 
-通过使用Soundcaster Session（声音选角器会话），可以在进行游戏内的声音整合之前就在本地分析性能。这让声音设计师无需依赖游戏的可运行版本就能对音频系统进行性能分析和调试；这一功能在另一方面也非常有用，就是向开发者展示音频能够保持在既定的内存预算范围内，在整合后不会打断游戏。当音频加入后，您也可以一边玩游戏一边进行实时性能分析。这一点十分的好用，您可以确认游戏引擎能否正确发出音频事件，而无需在Soundcaster（声音选角器）内手动触发事件。
+通过使用Soundcaster Session（声音选角器会话），可以在进行游戏内的声音整合之前就在本地分析性能。这让声音设计师无需依赖游戏的可运行版本就能对音频系统进行性能分析和调试；这一功能在另一方面也非常有用，就是向开发者展示音频能够保持在既定的内存预算范围内，在整合后不会压垮游戏。当音频加入后，您也可以一边玩游戏一边进行实时性能分析。这项功能十分的好用，您可以确认游戏引擎能否正确发出音频事件，而无需在Soundcaster（声音选角器）内手动触发事件。
 
-它左上角的视图-Capture Log-记录了一切来自声音引擎的活动。这会产生大量的信息，所以我强烈建议用Capture Log Filter（捕获日志筛选器）根据您的需求来选取感兴趣的部分，比如Events（事件），Actions（动作），States（状态）和Switches（切换开关）。
+它左上角的视图-Capture Log-记录了一切来自声音引擎的活动。但这会产生大量的信息，所以我强烈建议用Capture Log Filter（捕获日志筛选器）根据您的需求来选取感兴趣的部分，比如Events（事件），Actions（动作），States（状态）和Switches（切换开关）。
 
 **小技巧：**我有很多次用Capture Log的时候不是为了调试纠错，而是为了更精准地进行设计。比如，当我知道一个音频事件是在一段游戏内动画的开端触发时，我会用Wwise远程连接到游戏，播放并触发这一动画，并在Capture Log中记录下动画开始和结束的精确时间。我会把整个过程录像，这样在DAW内进行设计的时候就能使用这段视频，并且清晰地看到对应游戏内的时间我应何时开始播放这段动画的声音。
 
@@ -34,7 +34,7 @@ Performance Monitor视图能够展示CPU、流播放和内存使用方面的性�
 
 ![](https://github.com/akchina/learnwwisecn/blob/master/ProfilingTroubleshootingandDebuggingUsingWwise/images/Picture2-1.png?raw=true)
 
-Game Object Profiler Layouts使用起来没有那么直观，但是在分析游戏中的Game Objects和Listeners（听者）的实时信息时，它还是非常有用。它由三个视图构成：Game Object Explorer（游戏对象管理器），Game Sync Monitor（游戏同步器监视器）,以及Game Object 3D Viewer（游戏对象3D查看器）。这一布局要在音频已整合到游戏中后使用，使用时需运行游戏并实时连接到游戏中。
+Game Object Profiler Layouts使用起来没有那么直观，但是在分析游戏中的Game Objects和Listeners（听者）的实时信息时，它还是非常有用的。它由三个视图构成：Game Object Explorer（游戏对象管理器），Game Sync Monitor（游戏同步器监视器）,以及Game Object 3D Viewer（游戏对象3D查看器）。这一布局要在音频已整合到游戏中后使用，使用时需运行游戏并实时连接到游戏中。
 
 就像Profiler Layout一样，它也会分析声音引擎的输出，但它不是从声音引擎本身及其活动的角度，而是通过每个独立的游戏对象进行分析。使用Game Object Profiler Layout（游戏对象性能分析器），您可以分析任何在游戏中发声的对象并且确保它们的表现和设想的一致。
 
@@ -65,7 +65,7 @@ Schematic View主要的目的不是调试，但是用来查看工程中复杂的
 
 **小技巧：**使用Schematic View Search box（对象网络视图搜索框）来快速定位对象，或者用General Search box（普通搜索框）（如果对象还没有位于Schematic View中）来寻找对象并直接在Schematic View中打开。
 
-最后，当一个工程达到一定规模时，想要严丝合缝地追溯所有工程对象层级中的组件和对象就可能变得困难，如果您之前尝试过多版本声音和Events就更是如此。Event Viewer（事件查看器）可以非常方便地查看选中的对象在哪些事件中被引用。我建议每过一段时间就检查一遍您的工程对象层级结构，保证里面没有不需要的对象，因为它们可能被错误地在SoundBank里载入了，这样就会多占用空间，这些空间本来可以给真正需要的资源来用的。同样的，不要低估Query（查询）选项卡和Query Editor（查询编辑器），它们能让您在工程中定位任何Object Type（对象类型），比如哪些总线使用了Plugins（插件）或Effects（效果器）。
+最后，当一个工程达到一定规模时，想要严丝合缝地追溯所有工程对象层级中的组件和对象就可能变得困难，如果您之前尝试过多版本声音和Events就更是如此。Event Viewer（事件查看器）可以非常方便地查看选中的对象在哪些事件中被引用。我建议每过一段时间就检查一遍您的工程对象层级结构，保证里面没有不需要的对象，因为留着它们就有可能会被错误地加入SoundBank里来载入了，这样就会多占用空间，而这些空间本来是可以给真正需要的资源来用的。同样的，不要低估Query（查询）选项卡和Query Editor（查询编辑器），它们能让您在工程中定位任何Object Type（对象类型），比如哪些总线使用了Plugins（插件）或Effects（效果器）。
 
 如果不提到Soundcaster Session肯定也是不对的，因为它本身就是一个测试和调试工具，您几乎可以在这里复现游戏的全部或者一部分，聚焦音频内容。Shift+S的快捷键（显示Soundcaster）绝对是您应该最早记住的快捷键之一，因为这个工具让您能听到各种音频组件的互相作用，并确保您的States、Switches、RTPC和音乐触发器是关联到了正确Events的。
 
