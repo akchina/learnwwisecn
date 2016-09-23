@@ -1,6 +1,6 @@
 #简便快捷：如何在Wwise中管理您的SoundBanks
 
-[](images/DifferentSoundBankStrategies.png)
+![](https://github.com/akchina/learnwwisecn/blob/master/QuickAndEasy_HowToManageYourSoundBanksInWwise/images/DifferentSoundBankStrategies.png?raw=true)
 
 您在创建SoundBanks（声音库）时做出的选择会影响到管理它们时的工作量，也会影响到游戏的性能。我们建议声音设计师和程序员一起建立一条最合适你们游戏的策略。
 
