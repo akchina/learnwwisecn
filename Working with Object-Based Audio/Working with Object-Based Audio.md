@@ -24,7 +24,7 @@ VR音频中常用的双耳虚拟化用对象范式来解释会很好理解。双
 
 现在，假设您将两个3D声源发送到一条混音总线，您从总线得到的输出音频数据将会呈现多个声源/对象的叠加，而构成这个叠加的方向分量将会丢失。
 
-![]()
+![](https://github.com/akchina/learnwwisecn/blob/master/Working%20with%20Object-Based%20Audio/images/Screen_Shot_2016-06-17_at_2.34.19_PM.png?raw=true)
 
 *图1-两个入射角不同的声源被声像平移并混音到一条多声道总线上。声像平移意味着输入信号（此处表示为入射角Ɵi）的空间表示转换到输出信号（比如通过把信号分配到7.1扬声器设置的两个或更多声道上）的空间表示。输出就是声像平移对象的混合，并且不一定有一个确定的入射角（按照之前给的概念，输出不是一个对象）。*
 
@@ -36,13 +36,13 @@ Wwise中的混音器插件界面是一种基于对象的插件架构，因为混
 
 1.您不应该在双耳声信号上添加Effects（效果器）（至少不该添加非线性Effects， 如压缩器），因为它们可能会破坏您想用双耳声处理达到的空间音频感。
 
-![]()
+![](https://github.com/akchina/learnwwisecn/blob/master/Working%20with%20Object-Based%20Audio/images/Screen_Shot_2016-06-17_at_2.46.12_PM.png?raw=true)
 
 *图2-错误地在混音器插件输出的双耳声信号下游添加压缩器Effect。*
 
 2.您不应该使用混音器插件上游的混音总线，因为缩混的结果将不再含有双耳声处理所需的3D信息。
 
-![]()
+![](https://github.com/akchina/learnwwisecn/blob/master/Working%20with%20Object-Based%20Audio/images/Screen_Shot_2016-06-22_at_5.30.15_PM.png?raw=true)
 
 *图3-混音器插件上游的对象混音。子混音信号不携带对象，因此不能被插件所双耳声化。*
 
@@ -51,7 +51,7 @@ Wwise中的混音器插件界面是一种基于对象的插件架构，因为混
 
 那么，如果我们能结合两者的长处该多好？我们能否以不错的空间精度渲染音频，同时又免受基于对象音频的缺点所困？请继续关注我们的博客，学习更多ambisonics的相关知识，也许能帮助您做到这一点！
 
-![]()
+![](https://github.com/akchina/learnwwisecn/blob/master/Working%20with%20Object-Based%20Audio/images/Screen_Shot_2016-06-17_at_2.47.53_PM.png?raw=true)
 
 *图4-对象被自由地缩混并声像平移到一个多声道空间音频表示上去，它能够传达所有成分的方向强度，并且能够通过添加Effects等来进行操纵。*
 
