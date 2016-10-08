@@ -21,3 +21,4 @@
 * [简便快捷：如何在Wwise中管理您的SoundBanks](https://github.com/akchina/learnwwisecn/blob/master/QuickAndEasy_HowToManageYourSoundBanksInWwise/QuickAndEasy_HowToManageYourSoundBanksInWwise.md)
 * [100+ Wwise 虚拟现实游戏（持续壮大中）](https://github.com/akchina/learnwwisecn/blob/master/100%2B%20Wwise%20Virtual%20Reality%20Games%20(and%20counting...)/100%2Bwwise-vr-games.md)
 
+* [Ambisonics作为空间音频的中介表示法（针对VR）](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR).md)

@@ -10,7 +10,7 @@ VR游戏需要为耳机进行双耳声（binaural）混音渲染，方式是让�
 
 为了应用合适的HRTFs，双耳声处理需要声源传来的方向。有一种实现方式就是独立滤波每个位置的声源。然而每个声源独立进行声像平移和双耳声滤波是有缺陷的（[见我们之前在Ambisonics方面的博客](http://blog.audiokinetic.com/working-with-object-based-audio)）。尤其是它让声音设计师无法对声音分组并做子混音以便应用音频Effects（效果器），比如动态范围压缩。为了弥补这些缺陷，我们需要将声像平移阶段和双耳声处理阶段分离开来。在这两个阶段之间，我们需要一种信号格式来携带信息，告诉我们组成子混音音频的这些声音的空间属性。我们把这种格式称作空间音频的中介表示法，下图中的问号就代表这种格式。
 
-[]()
+[](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-01_at_9.41.42_AM.png?raw=true)
 
 *图1-自由地对对象进行子混音，并将其加入一个多声道空间音频表示法之中，这个表示法能够传达出其所有成分的方向密度，同时也可以通过添加（比如）Effects来操纵这一表示。*
 
@@ -20,7 +20,7 @@ VR游戏需要为耳机进行双耳声（binaural）混音渲染，方式是让�
 
 合适的空间音频的中介表示法会使用虚拟扬声器。虚拟扬声器的概念很简单。它由一个多声道格式组成，这个格式中每个声道都代表一个位置固定且位置已知的虚拟扬声器。于是声音就根据标准声像平移法则进行声像平移并被混音到这个多声道格式中。之后，每个声道的信号将会由相关联的虚拟扬声器对应的HRTF分别滤波。
 
-![]()
+![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-01_at_9.44.13_AM.png?raw=true)
 
 *图2-这是虚拟扬声器表示法，其中每个声道都被描述为环绕听者（如第一人称射击的镜头，或第三人称射击的主角位置）周围的虚拟扬声器。在VR游戏中，每个虚拟扬声器的信号都会通过与其位置（固定）相对应的HRTF，并传给耳机混音的每只耳朵。*
 
@@ -28,8 +28,8 @@ VR游戏需要为耳机进行双耳声（binaural）混音渲染，方式是让�
 
 在Wwise里，您可以将3D声音的通路连接到到一条专门负责空间音频的中介表示法的音频总线上，而且可以让它的父级总线进行双耳声渲染。在这种情况下，后者有双耳声Effect，前者有母带处理Effects（如果需要）。
 
-[![]()]()
-[![]()]()
+[![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-02_at_10.29.25_AM.png?raw=true)](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB-screenshot-fixedobject.png?raw=true)
+[![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-02_at_10.29.25_AM.png?raw=true)](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB-screenshot-ISR-fixedobject.png?raw=true)
 
 *图3-在Wwise中使用虚拟扬声器表示法，如Project Explorer（工程管理器）和Schematic View（对象网络视图）所示。两条总线都设成带有多扬声器的标准设置，比如7.1.4。为了要表示来自于听者上方的声音，Height（高度）声道也是需要的*
 
@@ -40,7 +40,7 @@ VR游戏需要为耳机进行双耳声（binaural）混音渲染，方式是让�
 
 高阶Ambisonics（HOA）就有些难以说明，但是我们可以把高阶解释为携带额外的数据，以便改善空间精度。二阶和三阶Ambisonics分别由9个和16个声道组成，因此也更为精确。
 
-![]()
+![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-01_at_9.51.01_AM.png?raw=true)
 
 *图4-分别由一阶Ambisonics（左）和三阶Ambisonics（右）表示的点声源。色温和信号能量成正比。
 在Ambisonics术语中，声像平移到Ambisonics对应编码，而将Ambisonics转码为双耳声设置或者扬声器馈送就对应解码。*
@@ -49,8 +49,9 @@ VR游戏需要为耳机进行双耳声（binaural）混音渲染，方式是让�
 
 在Wwise v2016.1中将Ambisonics实现为空间音频的中介表示法和用虚拟扬声器法一样简单。只要将总线设成Ambisonics配置既可。我们建议使用更高阶的Ambisonics以获得令人满意的空间精度。
 
-[![]()]()
-[![]()]()
+
+[![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-02_at_10.33.58_AM.png?raw=true)](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB2_-screenshot-ambisonics.png?raw=true)
+[![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-02_at_10.33.58_AM.png?raw=true)](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB2-screenshot-ISR-ambisonics.png?raw=true)
 
 *图5-在Wwise中使用空间音频的中介表示法，如Project Explorer和Schematic View所示。两条总线都设成了Ambisonics配置。我们建议使用更高阶的Ambisonics以获得令人满意的空间精度。
 *
@@ -75,9 +76,9 @@ VR游戏需要为耳机进行双耳声（binaural）混音渲染，方式是让�
 
 ##[进入Audiokinetic Ambisonics管线内容概览](http://cta-service-cms2.hubspot.com/ctas/v2/public/cs/c/?cta_guid=efdd1440-4633-4b15-af65-0f41a1b7ecc8&placement_guid=add2a042-826e-4297-bd15-381212f1192a&portal_id=1940263&redirect_url=APefjpEuqIRh1mvuHErF_SN_Ux_a4A8cN78CPfl4azsOUGIJAgWDwJUjqHYrt44hQJUbRmpHxYk9_CdkuQ0u3MHZumHuFsSMlfwWs5nN4rMlpgbLpkxdwLvDKG5-NA4xarutBglzS5zL3ic7VuseIrymBRSzFnplZbE-neFmJhIA-Ao4wO49FgGyWCu_qN50yZ3OX4REEfqiSMN7BasnP148VbwDFdroRt-QQPihMlpBqpiuTSnX2rt4yIOhWDLpMReWMDi6UXmsbtBeT81ptkfSBpCdKexzm6Ah9Z7vDJIjjfb2FBdeG8s&hsutk=e9b879c3cbe940b558fad4e69db59f76&utm_referrer=http%3A%2F%2Fblog.audiokinetic.com%2Fambisonics-as-an-intermediate-spatial-representation-for-vr&canon=http%3A%2F%2Fblog.audiokinetic.com%2Fambisonics-as-an-intermediate-spatial-representation-for-vr&__hstc=170909823.e9b879c3cbe940b558fad4e69db59f76.1465437682329.1475892260865.1475918243850.205&__hssc=170909823.9502.1475918243850&__hsfp=1874498977)
 
-![]()
+![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Xavier.png?raw=true)
 
-**LOUIS-XAVIER BUFFONI**
+**路易斯-扎威尔 布冯尼**
 Audiokinetic 研发总监
 
 扎威尔·布冯尼领导Audiokinetic的空间音频研发。他有电子工程的硕士学位，并折衷音频知识传播，不时撰写互动音乐、HDR动态混音方面的文章并开展演讲活动，最近也开始触及基于对象的声像平移。扎威尔在AES游戏大会、MIGS等业界会议上做过演讲。
