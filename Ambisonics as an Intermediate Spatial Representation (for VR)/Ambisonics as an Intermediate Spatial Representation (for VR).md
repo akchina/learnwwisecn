@@ -28,8 +28,8 @@ VR游戏需要为耳机进行双耳声（binaural）混音渲染，方式是让�
 
 在Wwise里，您可以将3D声音的通路连接到到一条专门负责空间音频的中介表示法的音频总线上，而且可以让它的父级总线进行双耳声渲染。在这种情况下，后者有双耳声Effect，前者有母带处理Effects（如果需要）。
 
-[![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-02_at_10.29.25_AM.png?raw=true)](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB-screenshot-fixedobject.png?raw=true)
-[![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-02_at_10.29.25_AM.png?raw=true)](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB-screenshot-ISR-fixedobject.png?raw=true)
+![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB-screenshot-fixedobject.png?raw=true)
+![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB-screenshot-ISR-fixedobject.png?raw=true)
 
 *图3-在Wwise中使用虚拟扬声器表示法，如Project Explorer（工程管理器）和Schematic View（对象网络视图）所示。两条总线都设成带有多扬声器的标准设置，比如7.1.4。为了要表示来自于听者上方的声音，Height（高度）声道也是需要的*
 
@@ -50,8 +50,8 @@ VR游戏需要为耳机进行双耳声（binaural）混音渲染，方式是让�
 在Wwise v2016.1中将Ambisonics实现为空间音频的中介表示法和用虚拟扬声器法一样简单。只要将总线设成Ambisonics配置既可。我们建议使用更高阶的Ambisonics以获得令人满意的空间精度。
 
 
-[![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-02_at_10.33.58_AM.png?raw=true)](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB2_-screenshot-ambisonics.png?raw=true)
-[![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-02_at_10.33.58_AM.png?raw=true)](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB2-screenshot-ISR-ambisonics.png?raw=true)
+![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB2_-screenshot-ambisonics.png?raw=true)
+![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB2-screenshot-ISR-ambisonics.png?raw=true)
 
 *图5-在Wwise中使用空间音频的中介表示法，如Project Explorer和Schematic View所示。两条总线都设成了Ambisonics配置。我们建议使用更高阶的Ambisonics以获得令人满意的空间精度。*
 
@@ -78,7 +78,9 @@ VR游戏需要为耳机进行双耳声（binaural）混音渲染，方式是让�
 ![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Xavier.png?raw=true)
 
 **LOUIS-XAVIER BUFFONI**
+
 **路易斯-扎威尔 布冯尼**
+
 Audiokinetic 研发总监
 
 扎威尔·布冯尼领导Audiokinetic的空间音频研发。他有电子工程的硕士学位，并折衷音频知识传播，不时撰写互动音乐、HDR动态混音方面的文章并开展演讲活动，最近也开始触及基于对象的声像平移。扎威尔在AES游戏大会、MIGS等业界会议上做过演讲。
