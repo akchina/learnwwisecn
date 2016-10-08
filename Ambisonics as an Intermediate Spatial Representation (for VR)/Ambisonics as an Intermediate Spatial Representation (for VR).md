@@ -53,8 +53,7 @@ VR游戏需要为耳机进行双耳声（binaural）混音渲染，方式是让�
 [![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-02_at_10.33.58_AM.png?raw=true)](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB2_-screenshot-ambisonics.png?raw=true)
 [![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Screen_Shot_2016-08-02_at_10.33.58_AM.png?raw=true)](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/AMB2-screenshot-ISR-ambisonics.png?raw=true)
 
-*图5-在Wwise中使用空间音频的中介表示法，如Project Explorer和Schematic View所示。两条总线都设成了Ambisonics配置。我们建议使用更高阶的Ambisonics以获得令人满意的空间精度。
-*
+*图5-在Wwise中使用空间音频的中介表示法，如Project Explorer和Schematic View所示。两条总线都设成了Ambisonics配置。我们建议使用更高阶的Ambisonics以获得令人满意的空间精度。*
 
 目前，有些VR供应商已经提供可接受Ambisonics信号并进行双耳声虚拟化的SDKs。随着它们的出现，Wwise也能直接将Ambisonics输送至这些设备上。其他情况下，它也能使用您最喜欢的3D音频插件解码Ambisonics并转码为双耳声。自带Wwise的Auro Headphone就是一个例子。
 
@@ -78,6 +77,7 @@ VR游戏需要为耳机进行双耳声（binaural）混音渲染，方式是让�
 
 ![](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/images/Xavier.png?raw=true)
 
+**LOUIS-XAVIER BUFFONI**
 **路易斯-扎威尔 布冯尼**
 Audiokinetic 研发总监
 
