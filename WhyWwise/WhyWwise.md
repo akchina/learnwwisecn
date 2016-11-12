@@ -24,7 +24,7 @@
 
 ## Profiler
 
-![](images/Profiler.png)
+![](https://github.com/akchina/learnwwisecn/blob/master/WhyWwise/images/Profiler.png?raw=true)
 
 Wwise 最强大的特性之一是其 [Profiler（性能分析器）](https://www.audiokinetic.com/library/edge/?source=Help&id=game_profiler_game_profiler)。Profiler 可以在游戏运行的时候把设计工具连接到游戏中去，并监视声音引擎里的一切活动。游戏中新来的 Events 及其引发的 Actions（动作）可以实时显示，这些动作包括比如声音的开播和停播，或者音量变化和定位信息。还可以显示错误信息、参数值和资源占用。这个工具用来调试和优化简直妙极了，可以节省巨大的时间，帮助我们快速弄清声音有没有在按计划运作，如果没有，原因又是什么。
 
@@ -39,7 +39,7 @@ Wwise 最强大的特性之一是其 [Profiler（性能分析器）](https://www
 
 ## 动态混音
 
-![](images/Dynamic_Mixing.png)
+![](https://github.com/akchina/learnwwisecn/blob/master/WhyWwise/images/Dynamic_Mixing.png?raw=true)
 
 Wwise 还提供了许多方法来[动态控制混音](https://www.audiokinetic.com/library/edge/?source=Help&id=using_advanced_settings_and_dynamic_mixing)，响应游戏中的 Events、States 以及任何时候的播放内容。High Dynamic Range（HDR，高动态范围）可以让混音自适应播放内容的响度，让音量小的声音来给音量大的声音腾出空间以进一步提升后者的听觉响度。States 可以改变总线音量、滤波或者效果器。也可以用 Ducking（闪避），鼠标点选几下就可以设好。
 
@@ -47,7 +47,7 @@ Wwise 还提供了许多方法来[动态控制混音](https://www.audiokinetic.c
 
 ## 互动音乐系统
 
-![](images/Interactive_Music.png)
+![](https://github.com/akchina/learnwwisecn/blob/master/WhyWwise/images/Interactive_Music.png?raw=true)
 
 大多数游戏都需要某种形式的[互动或者动态音乐](https://www.audiokinetic.com/library/edge/?source=Help&id=understanding_interactive_music_understanding_interactive_music)，这是游戏引擎支持里面最薄弱的环节。Wwise 的解决方案足够灵活，可以支持任何手段，提供精确到采样点的同步和定制自由度非常高的过渡行为。系统由 State 来驱动，这意味着只需要在游戏或关卡开始时启动音乐系统，然后按需要去设置 States 就行了。
 
@@ -63,9 +63,9 @@ Wwise 还提供了许多方法来[动态控制混音](https://www.audiokinetic.c
 
 跨平台开发是游戏引擎的强项，而且这也包括了音频部分。然而 Wwise 还是能提供一点优势，它能通过 ShareSets（见下文）在宏观和微观层面上全面控制[压缩和格式转码](https://www.audiokinetic.com/library/edge/?source=Help&id=creating_audio_conversion_settings_sharesets)，这个宝贵的功能让针对各个平台的内容优化变得快捷有效。
 
-## Soundcaster / Prototyping
+## Soundcaster / 原型设计
 
-![](images/Soundcaster_-_Prototyping.png)
+![](https://github.com/akchina/learnwwisecn/blob/master/WhyWwise/images/Soundcaster_-_Prototyping.png?raw=true)
 
 Wwise 的设计中始终有一条核心原则，那就是让声音设计师对声音行为的控制权达到最大，而对游戏代码的依赖降到最小。当开枪时，游戏只需要给 Wwise 发一个 Event，之后发生的一切，比如层叠、随机化、序列化声音组分或者影响别的声音全都掌握在声音设计师的手中。
 
@@ -88,9 +88,10 @@ Wwise 的设计中始终有一条核心原则，那就是让声音设计师对�
 
 所以，“总体上 Wwise 能给项目带来什么好处呢？” 综上，采用 Wwise 能让声音设计师节省大量的时间，建立高效的工作流程，并且把时间花在为产品增添价值的目标上，比如创造内容并让项目更好听。Wwise 还能减少编程时间，把控制权和实现创意特性的自由交到声音设计师的手中。这意味着它能解放很多个星期甚至很多个月的编程人力资源，而把时间花在最值得花的地方：让你的项目达到最好。
 
-![](images/ciaran-1.jpg)
+![](https://github.com/akchina/learnwwisecn/blob/master/WhyWwise/images/ciaran-1.jpg?raw=true)
 
 CIARAN WALSH
+
 总监 - Hornet Sound
 
 Ciaran 是一位声音设计师、程序员和作曲，有 16 年的业界经验。他目前的项目包括饱受赞誉的太空战游戏《Fractured Space》（破碎空间）。他曾是经典小众互动音乐解谜游戏《Chime》（奇幻乐钟）的作者。
