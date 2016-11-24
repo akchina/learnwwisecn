@@ -23,5 +23,5 @@
 * [Ambisonics作为空间音频的中介表示法（针对VR）](https://github.com/akchina/learnwwisecn/blob/master/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR)/Ambisonics%20as%20an%20Intermediate%20Spatial%20Representation%20(for%20VR).md)
 * [使用基于对象的音频](https://github.com/akchina/learnwwisecn/blob/master/Working%20with%20Object-Based%20Audio/Working%20with%20Object-Based%20Audio.md)
 * [为什么要用 Wwise？](https://github.com/akchina/learnwwisecn/blob/master/WhyWwise/WhyWwise.md)
-
+* [Wwise 2016.2 新发布纵览](https://github.com/akchina/learnwwisecn/blob/master/Wwise-2016.2-overview/Wwise-2016.2-overview.md)
 
