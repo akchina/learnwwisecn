@@ -1,4 +1,4 @@
-# The Game Awards 2016 榜单上的 Wwise 用户
+# 盘点 The Game Awards 2016 榜单上的 Wwise 用户
 
 被誉为“游戏奥斯卡奖”的 The Game Awards 2016 刚刚落下帷幕。[完整名单](http://thegameawards.com/nominees/)中超过 1/3 的提名采用了 Wwise 作为互动音频解决方案，这里将这些用户项目相关提名总结如下（团队和个人奖项考虑所在项目也算在内）：
 
