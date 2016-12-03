@@ -136,7 +136,7 @@
 - God of War (Santa Monica Studio/Sony Interactive Entertainment)
 
 
-## BEST ESPORTS GAME:
+## BEST ESPORTS GAME 最佳电竞游戏:
 
 ![](https://github.com/akchina/learnwwisecn/blob/master/Wwise-TGA2016/images/wwise-lol.jpeg?raw=true)![](https://github.com/akchina/learnwwisecn/blob/master/Wwise-TGA2016/images/wwise-overwatch.jpeg?raw=true)
 
