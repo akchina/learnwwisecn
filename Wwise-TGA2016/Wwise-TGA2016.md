@@ -29,7 +29,7 @@
 
 ## BEST ART DIRECTION 最佳美术指导:
 
-![](https://github.com/akchina/learnwwisecn/blob/master/Wwise-TGA2016/images/wwise-abzu.jpeg?raw=true)![](https://github.com/akchina/learnwwisecn/blob/master/Wwise-TGA2016/images/wwise-inside.jpeg?raw=true)![](https://github.com/akchina/learnwwisecn/blob/master/Wwise-TGA2016/images/wwise-overwatch.jpeg?raw=true)
+![](https://github.com/akchina/learnwwisecn/blob/master/Wwise-TGA2016/images/wwise-abzu.jpeg?raw=true)![](https://github.com/akchina/learnwwisecn/blob/master/Wwise-TGA2016/images/wwise-firewatch.jpeg?raw=true)![](https://github.com/akchina/learnwwisecn/blob/master/Wwise-TGA2016/images/wwise-inside.jpeg?raw=true)![](https://github.com/akchina/learnwwisecn/blob/master/Wwise-TGA2016/images/wwise-overwatch.jpeg?raw=true)
 
 - Abzu (Giant Squid/505)
 - Firewatch (Campo Santo)
