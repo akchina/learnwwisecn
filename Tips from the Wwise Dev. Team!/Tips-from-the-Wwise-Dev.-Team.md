@@ -2,11 +2,11 @@
 
 ![](http://info.audiokinetic.com/hubfs/tips%20from%20wwise%20dev%20team.jpg)
 
-本文通过一系列针对资深用户的小贴士，介绍了 Wwise 中一些鲜为人知的功能。其中多数小节都独立成章，完全可以根据自己的掌握程度来跳过部分章节。
+本文通过一系列针对资深用户的小贴士，介绍了 Wwise 中一些鲜为人知的功能。其中多数小节都独立成章，可以根据自己的掌握程度来跳过部分章节。
 
 ## 自定义键盘快捷键
 
-Wwise 中的诸多功能都允许通过键盘快捷键来访问（比如按下 Ctrl+Shift+K 可以弹出 List 视图）。很多功能都有默认快捷键，你可能会发现它们大多使用了辅助按键（Ctrl、Shift 和 Alt）。这就意味着当你需要其他功能时，可以抛开这些辅助按键，而仅使用单键来访问所需功能。
+Wwise 中的诸多功能都允许通过键盘快捷键来访问（按下 Ctrl+Shift+K 可以查看快捷键列表）。很多功能都有默认快捷键，你可能会发现它们大多使用了辅助按键（Ctrl、Shift 和 Alt）。这就意味着当你需要其他功能时，可以抛开这些辅助按键，而仅使用单键来访问所需功能。
 
 比如可以将快捷键设置如下：
 
@@ -20,7 +20,7 @@ Wwise 中的诸多功能都允许通过键盘快捷键来访问（比如按下 C
 为你最常用的功能设置单键来进行极速操作吧，快捷键就是生产力。
 
 另外请注意，所有的快捷键设置都会保存到这个文件：  
-[%appdata%\Audiokinetic\Wwise\KeyboardShortcuts.xml](%appdata%\Audiokinetic\Wwise\KeyboardShortcuts.xml)。
+*%appdata%\Audiokinetic\Wwise\KeyboardShortcuts.xml*。
 
 可以将这个文件随意复制转存，方便与团队共享，也方便自己在多个电脑上共用。
 
@@ -28,21 +28,21 @@ Wwise 中的诸多功能都允许通过键盘快捷键来访问（比如按下 C
 
 既然自定义快捷键已经就位，下面我们回到键盘快捷键窗口（Ctrl+Shift+K）。
 
-+ 点击指令一列（面板左侧）。
++ 点击指令列表（面板左侧）。
 + 按 Ctrl+A 将列表全选。
 + 按 Ctrl+C 复制。
 
-打开 Excel 或者其他表格软件并粘贴数据。记住 Wwise 会把列表内容自动转换为制表符分割格式，可以随时粘贴到表格中。
+打开 Excel 或者其他表格软件并粘贴数据。记住，Wwise 会把列表内容自动转换为制表符分割格式，可以随时粘贴到表格中。
 
 为复制好的表格美化一下格式，把它打印出来贴在工作台上吧。
 
 ## 精通 List View
 
-List View 是管理工程数据的利器。 它采用通用表格形式，允许你根据喜好来自定义各列中的内容。Wwise 中的各种对象属性数以百计，全都可以显示在 List 视图中，还允许编辑。
+List View 是管理工程数据的首选利器。 它采用通用表格形式，允许你根据喜好来自定义各列中的内容。Wwise 中的各种对象属性数以百计，全都可以显示在 List 视图中，还允许编辑。
 
 按下 Ctrl+Shift+F 即可显示 List View，你会发现：
 
-+ 如果当前视图中已经选中了某些对象（例如在 Project Explorer 中），按下 Ctrl+Shift+F 后打开的 List View 中将自动显示所选对象；并且
++ 如果当前处于输入焦点的视图中已经选中了某些对象（例如在 Project Explorer 中），按下 Ctrl+Shift+F 后打开的 List View 中将自动显示所选对象；并且
 + 按下 Ctrl+Shift+F 后，为了便于在 Wwise 工程中搜索对象，List View 将自动聚焦于其中的搜索框。
 
 更改 List 视图中各列内容的方法如下：
@@ -148,14 +148,10 @@ Wwise 的各种视图均采用标准上下文菜单。右键点击 Wwise 对象�
 
 ## 成就解锁
 
-到此结束，你太棒了！希望今天能学有所获。请不要放弃梦想，更不要让技术细节放慢你的脚步。
+恭喜一路读到了这里，你太棒了！希望今天能学有所获。请不要放弃梦想，更不要让技术细节放慢你的脚步。
 
 **BERNARD RODRIGUE**    
-研发总监    
+开发总监    
 Audio Kinetic
 
-Bernard Rodrigue 是 Audiokinetic 的研发总监。他自 2005 年加入 Audiokinetic 后，一直积极参与 Wwise 的基础研发。现在，Bernard 仍在带领团队从事 Wwise 的提升和扩展研发，比如 Interactive Music 等等。
-
-
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+Bernard Rodrigue 是 Audiokinetic 的开发总监。他自 2005 年加入 Audiokinetic 后，一直积极参与 Wwise 的基础研发。现在，Bernard 仍在带领团队从事 Wwise 的提升和扩展研发，比如 Interactive Music 等等。
