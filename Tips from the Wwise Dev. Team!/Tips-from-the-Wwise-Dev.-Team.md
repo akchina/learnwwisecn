@@ -152,6 +152,6 @@ Wwise 的各种视图均采用标准上下文菜单。右键点击 Wwise 对象�
 
 **BERNARD RODRIGUE**    
 开发总监    
-Audio Kinetic
+Audiokinetic
 
 Bernard Rodrigue 是 Audiokinetic 的开发总监。他自 2005 年加入 Audiokinetic 后，一直积极参与 Wwise 的基础研发。现在，Bernard 仍在带领团队从事 Wwise 的提升和扩展研发，比如 Interactive Music 等等。
