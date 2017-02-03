@@ -12,10 +12,10 @@ Wwise 中的诸多功能都允许通过键盘快捷键来访问（按下 Ctrl+Sh
 
 |**指令**|**快捷键**|
 |---|:---|
-|Workgroup > Diff (Work unit)|D|
-|Edit in External Editor 1 (Default)|E|
-|Show Source Editor|S|
-|View > Project Explorer > Create Random Container|R|
+|Workgroup > Diff (Work unit)  |D|
+|Edit in External Editor 1 (Default)  |E|
+|Show Source Editor  |S|
+|View > Project Explorer > Create Random Container  |R|
 
 为你最常用的功能设置单键来进行极速操作吧，快捷键就是生产力。
 
