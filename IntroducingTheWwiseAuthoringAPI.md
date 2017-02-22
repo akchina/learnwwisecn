@@ -1,5 +1,7 @@
 # 隆重推出 Wwise Authoring API
 
+作者：Bernard Rodrigue
+
 ![](http://info.audiokinetic.com/hubfs/Blog.png)
 
 大家知道 Wwise 有一套音频引擎 API，但是如果 Wwise 设计工具也有一套 API 能让外部应用程序跟它对话不是会更好一些吗？
@@ -69,3 +71,12 @@ Wwise 已经自带了很多视图，但也许对你来说还差点什么？你�
 
 
 [点我参加 GDC17 活动](https://cta-service-cms2.hubspot.com/ctas/v2/public/cs/c/?cta_guid=18e05218-0ee9-4f54-89fc-8fe543148bb0&placement_guid=ad2c033a-da82-4250-88b9-10f6dfc50a73&portal_id=1940263&redirect_url=APefjpHpHoVJuCdzfUXNAsVa5n1r5yseW7wWc0sokxXS11p4QwBeuo9yz7vnFBT9z8tpsF-75soZ8gaUw8I-1whXPv8Ti9Yg1KKgKc7VRr3rd4eBJUBy89PBBX58sgelo8CXl8kOaDx7tlY-_K5ftMs1-wFhui7jRpGiz128AmWT1TsGC3kIjeAxZ1DQ_TvEXHJmKmxLdDdT08tKJCIjS13bYqCAQzNCXtwt2NIu2CW1YIskLGhx687wz1EIldckP7ZGpIiH4TpG4mwECRG90y8ieJBSw9z3tQ&hsutk=c1106935c58e1f51be8e04bf173386d6&canon=https%3A%2F%2Fblog.audiokinetic.com%2Fintroducing-the-wwise-authoring-api%2F&utm_referrer=https%3A%2F%2Fblog.audiokinetic.com%2Fen%2F&__hstc=170909823.c1106935c58e1f51be8e04bf173386d6.1454336431772.1487076912294.1487710366310.185&__hssc=170909823.3.1487710366310&__hsfp=3974155380)
+
+### BERNARD RODRIGUE
+
+![](http://info.audiokinetic.com/hubfs/BernardR..png)
+
+开发总监
+Audiokinetic
+
+Bernard Rodrigue 是 Audiokinetic 开发总监。他于 2005 年加入 Audiokinetic，一直是 Wwise 核心开发成员。现在 Bernard  继续领导着几个 Wwise 前沿和扩展项目的开发。
